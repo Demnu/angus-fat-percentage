@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Container,
   Typography,
@@ -32,8 +32,8 @@ export function JacksonPollock3Calculator() {
   const [site3c, setSite3c] = useState("");
 
   // Calculated outputs
-  const [bodyDensity, setBodyDensity] = useState(null);
-  const [bodyFat, setBodyFat] = useState(null);
+  const [bodyDensity, setBodyDensity] = useState<null | string>(null);
+  const [bodyFat, setBodyFat] = useState<null | string>(null);
 
   const handleCalculate = () => {
     const ageNum = parseFloat(age);
